@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Добро пожаловать на мой сайт</h1>
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html">Главная</a></li>
+                    <li><a href="practice.html">Практика</a></li>
+                    <li><a href="coursework.html">Курсовая</a></li>
+                    <li><a href="achievements.html">Достижения</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <div class="author-info">
+                <img src= images/OFVOKJVOFPWEKJVKE[OPI[PRRPO.png alt="Фото автора" class="author-photo">
+                <h2>Обо мне</h2>
+                <p>Здравствуйте! Меня зовут Филипп Королёв. Я студент 3 курса МКТ, специализируюсь на веб-разработке. Этот сайт создан в рамках квалификационного экзамена.</p>
+            </div>
+            
+            <div class="quick-links">
+                <h2>Быстрая навигация</h2>
+                <div class="links-grid">
+                    <a href="practice.html" class="quick-link">
+                        <div class="link-icon">📊</div>
+                        <div class="link-text">Производственная практика</div>
+                    </a>
+                    <a href="coursework.html" class="quick-link">
+                        <div class="link-icon">📝</div>
+                        <div class="link-text">Курсовая работа</div>
+                    </a>
+                    <a href="achievements.html" class="quick-link">
+                        <div class="link-icon">🏆</div>
+                        <div class="link-text">Мои достижения</div>
+                    </a>
+                    <a href="contacts.html" class="quick-link">
+                        <div class="link-icon">📧</div>
+                        <div class="link-text">Контакты</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="news">
+            <h2>Последние обновления</h2>
+            <div class="news-slider">
+                <div class="slider-container">
+                    <div class="slide active">
+                        <h3>Новая курсовая работа</h3>
+                        <p>Добавлены материалы по курсовой работе по теме "Разработка веб-приложения".</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Прохождение практики</h3>
+                        <p>Завершил производственную практику в компании ООО "ТИХАЯ ИГРА".</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Новые сертификаты</h3>
+                        <p>Получены сертификаты за прохождение цифрового диктанта</p>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev-slide">❮</button>
+                    <div class="slider-dots"></div>
+                    <button class="next-slide">❯</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Мой учебный сайт. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсовая работа</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="coursework">
+    <header>
+        <div class="container">
+            <h1>Курсовая работа</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="practice.html">Практика</a></li>
+                    <li class="active"><a href="coursework.html">Курсовая</a></li>
+                    <li><a href="achievements.html">Достижения</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="coursework-info">
+            <h2>Тема курсовой работы</h2>
+            <p>Тема моей курсовой работы: <strong>"Завод по производству напитков"</strong>.</p>
+            
+            <div class="tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="context">Контекстная диаграмма</button>
+                    <button class="tab-button" data-tab="decomposition">Декомпозиция</button>
+                    <button class="tab-button" data-tab="uml">UML диаграммы</button>
+                </div>
+                
+                <div class="tab-content active" id="context">
+                    <h3>Контекстная диаграмма</h3>
+                    <img src= images/lgjkrkkfe.png alt="Контекстная диаграмма" class="diagram">
+                    <p>Контекстная диаграмма показывает систему в целом и ее взаимодействие с внешними сущностями.</p>
+                </div>
+                
+                <div class="tab-content" id="decomposition">
+                    <h3>Декомпозиция</h3>
+                    <img src= images/mlk[k[kf[e.png alt="Декомпозиция" class="diagram">
+                    <p>Диаграмма декомпозиции показывает внутреннюю структуру системы и взаимодействие между ее компонентами.</p>
+                </div>
+                
+                <div class="tab-content" id="uml">
+                    <h3>UML диаграммы</h3>
+                    <div class="uml-diagrams">
+                        <div class="uml-diagram">
+                            <h4>Диаграмма классов</h4>
+                            <img src= images/opsdjvbpiosdipouururiurieu.png alt="Диаграмма классов">
+                            <p>Показывает структуру системы, классы и отношения между ними.</p>
+                        </div>
+                        <div class="uml-diagram">
+                            <h4>Диаграмма последовательности</h4>
+                            <img src= images/gp[joewipfhewfg.png alt="Диаграмма последовательности">
+                            <p>Отображает последовательность взаимодействия объектов.</p>
+                        </div>
+                        <div class="uml-diagram">
+                            <h4>Диаграмма вариантов использования</h4>
+                            <img src= images/epowfjpewjfpew.png alt="Диаграмма вариантов использования">
+                            <p>Описание функциональности системы с точки зрения пользователя.</p>
+                        </div>
+                        <div class="uml-diagram">
+                            <h4>Диаграмма состояний</h4>
+                            <img src= images/fojweifyioweylncj.png alt="Диаграмма коопреации">
+                            <p>Показывает изменение состояния объектов в ответ на события.</p>
+                        </div>
+                        <div class="uml-diagram">
+                            <h4>Диаграмма компонентов</h4>
+                            <img src= images/fvjpfejwpifjejw.png alt="Диаграмма деятельности">
+                            <p>Отображает физические компоненты системы и их зависимости.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="coursework-download">
+            <h2>Материалы курсовой работы</h2>
+            <p>Вы можете скачать полный текст курсовой работы и презентацию:</p>
+            <div class="download-buttons">
+                <a href="#" class="btn" id="download-coursework">Скачать курсовую (PDF)</a>
+                <a href="#" class="btn" id="download-presentation">Скачать презентацию (PPTX)</a>
+            </div>
+            <div class="download-progress hidden" id="download-progress">
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <span id="progress-text">0%</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Мой учебный сайт. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

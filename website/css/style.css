@@ -1,0 +1,180 @@
+/* Базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: white;
+    color: black;
+    line-height: 1.5;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Шапка */
+header {
+    background: black;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav li.active a {
+    font-weight: bold;
+}
+
+/* Основное содержимое */
+main {
+    padding: 2rem 0;
+}
+
+section {
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin: 1rem 0 0.5rem;
+}
+
+/* Блок "Обо мне" */
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.author-info, .quick-links {
+    flex: 1;
+    min-width: 300px;
+}
+
+.author-photo {
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin: 0 1rem 1rem 0;
+    border: 1px solid black;
+    object-fit: cover;
+}
+
+/* Быстрые ссылки */
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.quick-link {
+    padding: 1rem;
+    border: 1px solid black;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.quick-link:hover {
+    background: #f5f5f5;
+}
+
+.link-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Слайдер */
+.slider-container {
+    position: relative;
+    min-height: 120px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.slider-dots {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: black;
+}
+
+/* Подвал */
+footer {
+    background: black;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .author-photo {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem;
+    }
+    
+    header h1 {
+        font-size: 1.3rem;
+    }
+}

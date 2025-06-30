@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои достижения</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="achievements">
+    <header>
+        <div class="container">
+            <h1>Мои достижения</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="practice.html">Практика</a></li>
+                    <li><a href="coursework.html">Курсовая</a></li>
+                    <li class="active"><a href="achievements.html">Достижения</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="achievements">
+            <h2>Сертификаты</h2>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card" data-type="certificate">
+                    <div class="achievement-image">
+                        <img src= images/ropeuiruuiwhj.png alt="Сертификат ИНТУИТ">
+                    </div>
+                    <div class="achievement-info">
+                        <h3>Сертификат по ИНТУИТ</h3>
+                        <p>Онлайн-курс "ИНТУИТ" </p>
+                        <p class="achievement-date">Октябрь 2024</p>
+                        <p class="achievement-desc">Курс проектирования информационных систем.</p>
+                        <button class="view-certificate">Посмотреть сертификат</button>
+                    </div>
+                </div>
+                
+                <div class="achievement-card" data-type="certificate">
+                    <div class="achievement-image">
+                        <img src= images/DSFFP-EVKOLKMOKJOKJOOO.png alt="Сертификат Stepic">
+                    </div>
+                    <div class="achievement-info">
+                        <h3>Сертификат по Stepic</h3>
+                        <p>Курс разработки информационных систем</p>
+                        <p class="achievement-date">Октябрь 2024</p>
+                        <p class="achievement-desc">полный курс</p>
+                        <button class="view-certificate">Посмотреть сертификат</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="achievement-modal hidden">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <img src="" alt="Увеличенное изображение сертификата" class="modal-image">
+                    <div class="modal-info">
+                        <h3 class="modal-title"></h3>
+                        <p class="modal-date"></p>
+                        <p class="modal-desc"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2>Мои навыки</h2>
+            <div class="skills-chart">
+                <canvas id="skillsChart" width="400" height="400"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Мой учебный сайт. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
